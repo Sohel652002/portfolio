@@ -1,0 +1,268 @@
+.about-page {
+  padding-top: 5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+  box-shadow: var(--shadow);
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(99, 102, 241, 0.1);
+}
+
+.about-card.highlight-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(244, 114, 182, 0.05) 100%);
+  border-color: var(--primary-light);
+}
+
+.about-card.highlight-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg), 0 0 50px rgba(99, 102, 241, 0.2);
+}
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.about-icon svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.about-card:hover .about-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.about-icon.leadership {
+  background: var(--gradient-secondary);
+}
+
+.about-card:hover .about-icon.leadership {
+  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.3);
+}
+
+.about-icon.startup {
+  background: var(--gradient-warm);
+}
+
+.about-card:hover .about-icon.startup {
+  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+}
+
+.about-card h3 {
+  color: var(--text-primary);
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.startup-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+.startup-link:hover {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary);
+}
+
+.education-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.03) 50%, transparent 100%);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 70px;
+  height: 70px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.timeline-marker svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+/* Special styling for SSC marker - distinctive color for high score */
+.timeline-marker.ssc-marker {
+  background: var(--gradient-success);
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(52, 211, 153, 0.3);
+  }
+}
+
+.timeline-content {
+  flex: 1;
+  text-align: left;
+  padding: 1.5rem 2rem;
+}
+
+/* Special styling for SSC card - subtle highlight for achievement */
+.timeline-content.ssc-card {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(34, 211, 238, 0.05) 100%);
+  border-color: rgba(52, 211, 153, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-content.ssc-card::before {
+  content: '🎓';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 0.375rem 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-content h3 {
+  color: var(--text-primary);
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.timeline-institution {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.timeline-grade {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
+  color: #d946ef;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid rgba(244, 114, 182, 0.2);
+}
+
+/* Special styling for SSC grade - highlight 90% achievement */
+.timeline-grade.ssc-grade {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15) 0%, rgba(34, 211, 238, 0.15) 100%);
+  color: #059669;
+  border-color: rgba(52, 211, 153, 0.3);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 1.75rem;
+  }
+
+  .timeline::before {
+    left: 29px;
+  }
+
+  .timeline-marker {
+    width: 60px;
+    height: 60px;
+  }
+
+  .timeline-marker svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .timeline-item {
+    gap: 1.25rem;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  .timeline-content.ssc-card::before {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
+  }
+}
