@@ -1,16 +1,49 @@
-# React + Vite
+# Sohel Sheikh – MERN Stack Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio showcasing MERN stack projects, skills, and experience with responsive UI and live project demos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Live Website
+🌐 [https://sohel652002portfolio.vercel.app](https://sohel652002portfolio.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Projects
 
-## Expanding the ESLint configuration
+### Stock Market Dashboard
+- Built a real-time stock market dashboard using **React** and **Python APIs**
+- Automated graph analysis to provide actionable insights, improving data visibility by 40%
+- Tech: React, Python, APIs  
+- 🔗 [Live Demo](https://sohel652002portfolio.vercel.app/#projects) | [GitHub](https://github.com/Sohel652002/portfolio)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Blockchain Authenticity System
+- Developed a **MERN-based blockchain system** to verify document authenticity
+- Reduced fraud risk by 30% through secure verification
+- Tech: MongoDB, Express, React, Node.js  
+- 🔗 [Live Demo](https://sohel652002portfolio.vercel.app/#projects) | [GitHub](https://github.com/Sohel652002/blockchain-project)
+
+---
+
+## 🛠 Skills
+
+**Frontend:** React, HTML, CSS, JavaScript, Tailwind CSS  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB, SQL  
+**Other:** APIs, Git, Vite, MERN Stack, REST
+
+---
+
+## 📫 Contact
+
+- 📧 Email: sohelsattarsheikh786@gmail.com  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/sohel-sheikh-786/)  
+- 🔗 [GitHub](https://github.com/Sohel652002)
+
+---
+
+## 🏆 Achievements
+
+- Led college Kabaddi team as **Captain**  
+- Discipline Committee Head in college  
+- Completed **MERN and Python internships**
